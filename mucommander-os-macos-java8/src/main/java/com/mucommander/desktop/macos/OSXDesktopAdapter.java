@@ -189,7 +189,7 @@ public class OSXDesktopAdapter extends DefaultDesktopAdapter {
 
     @Override
     public List<Pair<JLabel, JComponent>> getExtendedFileProperties(AbstractFile file) {
-        if (OsVersion.MAC_OS_10_4.isCurrentOrHigher()) {
+        if (OsVersion.MAC_OS_10_14.isCurrentOrHigher()) {
             String comment = OSXFileUtils.getSpotlightComment(file);
             JLabel commentLabel = new JLabel(Translator.get("comment")+":");
             commentLabel.setAlignmentY(JLabel.TOP_ALIGNMENT);

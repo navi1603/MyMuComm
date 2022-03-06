@@ -151,7 +151,7 @@ public class AppleScript {
         // - AppleScript 2.0+ (macOS 10.5 and up) is fully Unicode-aware and expects a script in UTF-8 encoding.
         // - AppleScript 1.3- (macOS 10.4 or lower) expects MacRoman encoding, not UTF-8.
         String encoding;
-        if(OsVersion.MAC_OS_10_5.isCurrentOrHigher())
+        if(OsVersion.MAC_OS_10_15.isCurrentOrHigher())
             encoding = UTF8;
         else
             encoding = MACROMAN;
